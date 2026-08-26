@@ -1,0 +1,35 @@
+# Rebuilt inside the image; copying the host's copies is slow and, in the case of
+# bootstrap/cache, actively breaks the build: those files reference dev-only
+# providers that --no-dev never installs.
+vendor
+node_modules
+bootstrap/cache/*.php
+public/build
+public/hot
+
+# Never bake secrets or local state into an image.
+.env
+.env.*
+!.env.example
+storage/logs/*
+storage/framework/cache/data/*
+storage/framework/sessions/*
+storage/framework/views/*
+storage/app/private/imports/*
+
+.git
+.github
+.idea
+.vscode
+.DS_Store
+
+# Local development tooling has no place in the production image.
+compose.yaml
+docker/nginx
+docker/app
+Makefile
+phpstan.neon
+phpstan-baseline.neon
+pint.json
+eslint.config.js
+tests

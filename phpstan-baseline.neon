@@ -1,0 +1,193 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Method App\\Domain\\Assignment\\Services\\SnapshotReader\:\:classes\(\) should return list\<App\\Domain\\Assignment\\Dto\\ClassSnapshot\> but returns array\<int, App\\Domain\\Assignment\\Dto\\ClassSnapshot\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Domain/Assignment/Services/SnapshotReader.php
+
+		-
+			message: '#^Method App\\Domain\\Assignment\\Services\\SnapshotReader\:\:placements\(\) should return list\<App\\Domain\\Assignment\\Dto\\ExistingPlacement\> but returns array\<int, App\\Domain\\Assignment\\Dto\\ExistingPlacement\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Domain/Assignment/Services/SnapshotReader.php
+
+		-
+			message: '#^Method App\\Domain\\Assignment\\Services\\SnapshotReader\:\:rules\(\) should return list\<App\\Domain\\Assignment\\Dto\\RuleConfig\> but returns array\<int, App\\Domain\\Assignment\\Dto\\RuleConfig\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Domain/Assignment/Services/SnapshotReader.php
+
+		-
+			message: '#^Method App\\Domain\\Assignment\\Services\\SnapshotReader\:\:students\(\) should return list\<App\\Domain\\Assignment\\Dto\\StudentSnapshot\> but returns array\<int, App\\Domain\\Assignment\\Dto\\StudentSnapshot\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Domain/Assignment/Services/SnapshotReader.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Admin\\AssignmentController\:\:summary\(\) should return list\<array\<string, mixed\>\> but returns array\<int, array\{kelas\: mixed, baharu\: mixed, masuk\: mixed, kekal\: mixed, jumlah\: mixed\}\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Http/Controllers/Admin/AssignmentController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\SchoolClass\:\:\$jumlah\.$#'
+			identifier: property.notFound
+			count: 2
+			path: app/Http/Controllers/Admin/DashboardController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\SchoolClass\:\:\$terisi\.$#'
+			identifier: property.notFound
+			count: 2
+			path: app/Http/Controllers/Admin/DashboardController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Student\:\:\$aktif\.$#'
+			identifier: property.notFound
+			count: 2
+			path: app/Http/Controllers/Admin/DashboardController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Student\:\:\$jumlah\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/Admin/DashboardController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Student\:\:\$tahun\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/Admin/DashboardController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Student\:\:\$tidak_aktif\.$#'
+			identifier: property.notFound
+			count: 2
+			path: app/Http/Controllers/Admin/DashboardController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Teacher\:\:\$aktif\.$#'
+			identifier: property.notFound
+			count: 2
+			path: app/Http/Controllers/Admin/DashboardController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Teacher\:\:\$tidak_aktif\.$#'
+			identifier: property.notFound
+			count: 2
+			path: app/Http/Controllers/Admin/DashboardController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Admin\\DashboardController\:\:activities\(\) should return list\<array\<string, mixed\>\> but returns array\<int, array\{id\: int, description\: string, log_name\: string\|null, when\: string\|null\}\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Http/Controllers/Admin/DashboardController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Admin\\DashboardController\:\:distribution\(\) should return list\<array\{tahun\: int, jumlah\: int\}\> but returns array\<int, array\{tahun\: int, jumlah\: int\}\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Http/Controllers/Admin/DashboardController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Admin\\DashboardController\:\:rules\(\) should return list\<array\<string, mixed\>\> but returns array\<int, array\{id\: int, rule_type\: string, name\: string, is_active\: bool, weight\: int, description\: string\}\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Http/Controllers/Admin/DashboardController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Admin\\EnrolmentController\:\:eligibleFor\(\) should return list\<array\{id\: int, nama\: string, kod\: string\}\> but returns array\<int, array\{id\: int, nama\: string, kod\: string\}\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Http/Controllers/Admin/EnrolmentController.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>name" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Http/Controllers/Admin/ExportController.php
+
+		-
+			message: '#^Unable to resolve the template type TKey in call to function collect$#'
+			identifier: argument.templateType
+			count: 1
+			path: app/Http/Controllers/Admin/IntegrationController.php
+
+		-
+			message: '#^Unable to resolve the template type TValue in call to function collect$#'
+			identifier: argument.templateType
+			count: 1
+			path: app/Http/Controllers/Admin/IntegrationController.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>label" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Http/Controllers/Admin/SchoolClassController.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>name" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Http/Controllers/Admin/SchoolClassController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Admin\\StatisticsController\:\:classLoad\(\) should return list\<array\<string, mixed\>\> but returns array\<int, array\{nama\: string, guru\: string\|null, pelajar\: int, kapasiti\: int, peratus\: int, lelaki\: int, perempuan\: int\}\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Http/Controllers/Admin/StatisticsController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Admin\\StatisticsController\:\:roomUsage\(\) should return list\<array\<string, mixed\>\> but returns array\<int, array\{nama\: string, kapasiti\: int, pertemuan\: int, peratus\: int\}\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Http/Controllers/Admin/StatisticsController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Admin\\StatisticsController\:\:teacherLoad\(\) should return list\<array\<string, mixed\>\> but returns array\<int, array\{nama\: string, kelas\: int, had\: int, ketegasan\: int, ketegasan_label\: string\}\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Http/Controllers/Admin/StatisticsController.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>config" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Integrations/IntegrationManager.php
+
+		-
+			message: '#^Parameter \#1 \$message of static method Symfony\\Component\\Mime\\MessageConverter\:\:toEmail\(\) expects Symfony\\Component\\Mime\\Message, Symfony\\Component\\Mime\\RawMessage given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Mail/Transport/SendscapeTransport.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>label" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Support/ClashTranslator.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>name" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 2
+			path: app/Support/ClashTranslator.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>capacity" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Support/TimetableGrid.php
+
+		-
+			message: '#^Method Database\\Seeders\\DemoSeeder\:\:createClasses\(\) has parameter \$teachers with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: database/seeders/DemoSeeder.php
+
+		-
+			message: '#^Method Database\\Seeders\\DemoSeeder\:\:createClasses\(\) return type with generic class Illuminate\\Support\\Collection does not specify its types\: TKey, TValue$#'
+			identifier: missingType.generics
+			count: 1
+			path: database/seeders/DemoSeeder.php

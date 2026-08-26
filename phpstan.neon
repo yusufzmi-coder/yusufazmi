@@ -1,0 +1,17 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+    - vendor/nesbot/carbon/extension.neon
+    # Remaining entries are Eloquent generics noise at level 7, plus four places
+    # where PHPStan infers a relation as non-nullable but the schema allows null.
+    # Correctness wins there, so those stay nullsafe and live here instead.
+    - phpstan-baseline.neon
+
+parameters:
+    paths:
+        - app/
+        - bootstrap/app.php
+        - config/
+        - database/
+        - routes/
+
+    level: 7
